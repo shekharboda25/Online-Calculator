@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> calculator </title>
+    <!--added style css file to html file by link tag -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <!--heading tag for calculator-->
+        <h1>Calculator</h1>
+    </div>
+    <!--created a div class for calculator-->
+    <div class="calculator">
+        <input type="text" id="result" readonly>
+        <!--added input buttons by creating a div class button and added button tags-->
+        <div class="buttons">
+           <button onclick="clearResult()">AC</button>
+           <!--button for allcrear AC-->
+           <button onclick="deleteLastChar()">X</button>
+           <!--button for del last character  X -->
+           <!--used append tags for operators and numbers-->
+           <button onclick="appendOperator('/')">/</button> 
+           <button onclick="appendToResult('%')">%</button>         
+           <button onclick="appendNumber(7)">7</button>
+           <button onclick="appendNumber(8)">8</button>
+           <button onclick="appendNumber(9)">9</button>
+           <button onclick="appendOperator('-')">-</button>         
+           <button onclick="appendNumber(4)">4</button>
+           <button onclick="appendNumber(5)">5</button>
+           <button onclick="appendNumber(6)">6</button>
+           <button onclick="appendOperator('+')">+</button>        
+           <button onclick="appendNumber(1)">1</button>
+           <button onclick="appendNumber(2)">2</button>
+           <button onclick="appendNumber(3)">3</button>
+           <!--used apped to result for multiple the numbers & result-->
+           <button onclick="appendToResult('*')">*</button> 
+           <button onclick="appendToResult('00')">00</button>
+           <button onclick="appendNumber(0)">0</button>
+           <button onclick="appendDecimal( '.' )">.</button> 
+           <button onclick="calculate()">=</button>      
+        </div>
+        <h5>desined by B SHEKHAR</h5>
+    </div>
+    <!--added script file to html-->
+    
+    <script src="script.js"></script>   
+</body>
+</html>
